@@ -1,0 +1,280 @@
+/*/ подключение шрифтов/*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+:root {
+  --font-family: "Roboto Mono";
+
+}
+
+
+
+/*/ стили для всех элементов/*/
+* {
+
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+  max-width: 1920px !important;
+  color: black !important;
+
+}
+
+/*/ стили для шапки/*/
+
+.container-header {
+  background-color: #acacac;
+  height: 143px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 1662px;
+  height: 131px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 639px;
+  height: 52px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 26px;
+  color: #000;
+}
+
+.auth-nav {
+  width: 445px;
+  height: 52px;
+}
+
+.logo {
+  width: 364px;
+  height: 131px;
+
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 242px;
+  height: 98px;
+}
+
+.logo-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #000;
+}
+
+a {
+  transition: 0.5s;
+  padding: 10px !important;
+  border-radius: 20px;
+}
+
+
+a:hover {
+  background-color: rgb(190, 190, 190);
+  transition: 0.5s;
+  padding: 20px;
+
+
+}
+
+.admin {
+  width: 100px;
+
+}
+
+/* стили к мейну*/
+.main {
+  min-height: calc(100vh - 131px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1800px;
+}
+
+main {
+  min-height: calc(100vh - 131px);
+
+}
+
+.main-history {
+  padding: 50px !important;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-gap: 30px;
+
+}
+
+.info-user {
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+}
+
+.info-user label {
+  border-bottom: 1px solid #000;
+  width: 258px;
+  height: 30px;
+}
+
+.container-info-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 350px;
+  height: 445px;
+  background: #f4f4f4;
+}
+
+.admin-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background: #f4f4f4;
+  padding: 30px !important;
+}
+
+.img-main {
+  max-width: 870px;
+  max-height: 468px;
+  border-radius: 20px;
+}
+
+.form-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px !important;
+
+}
+
+.form-admin h5 {
+  border-bottom: 1px solid #000;
+  width: 258px;
+  overflow: auto;
+  min-height: 30px;
+}
+
+
+
+.container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bdbdbd;
+}
+
+.err {
+  color: red !important;
+}
+
+.container-form {
+  text-align: center;
+
+  background: #f4f4f4;
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 646px;
+  height: 614px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.reg-form {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  width: 278px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 10px;
+
+}
+
+.btn {
+  color: white !important;
+  width: 278px;
+  height: 68px;
+  font-family: var(--font-family) !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+}
+
+.btn-admin {
+  color: white !important;
+  border-radius: 13px !important;
+  width: 201px !important;
+  height: 41px !important;
+
+  font-family: var(--font-family) !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+}
+
+.auth {
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 493px;
+  height: 472px;
+}
+
+/*/ Стили к футеру/*/
+.footer {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1329px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 25px;
+  color: #000;
+
+}
+
+.container-footer {
+  background-color: #acacac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 131px;
+  border-top: 1px solid black;
+}
